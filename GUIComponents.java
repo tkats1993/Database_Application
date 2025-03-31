@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class GUIComponets {
+public class GUIComponents {
     public static JPanel createFormPanel(JTextField idField, JTextField titleField, JTextField authorField, JTextField priceField, JTextField qtyField) {
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
