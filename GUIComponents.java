@@ -1,5 +1,10 @@
 import javax.swing.*;
 import java.awt.Font;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Component;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 
 public class GUIComponents {
@@ -27,8 +32,14 @@ public class GUIComponents {
         btn.setBackground(new java.awt.Color(58, 130, 255)); // Μοντέρνο μπλε
         btn.setForeground(java.awt.Color.WHITE);             // Λευκή γραμματοσειρά
         btn.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(40, 90, 200), 2, true));
-        btn.setPreferredSize(new java.awt.Dimension(150, 40));
+        
+        Dimension fixedSize = new Dimension(160, 40);
+        btn.setPreferredSize(fixedSize);   // hint για layouts
+        btn.setMaximumSize(fixedSize);     // αναγκαστικό για BoxLayout
+        btn.setAlignmentX(Component.CENTER_ALIGNMENT); // κέντρο
+
     
+
         // Προαιρετικό hover effect
         btn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
