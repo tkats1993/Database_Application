@@ -2,14 +2,14 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class NewJFrame extends JFrame {
+public class NewJFrame_Example extends JFrame {
     
     // Δημιουργία στοιχείων του GUI
     private JButton myButton;
     private JTextField myTextField;
     private JLabel myLabel;
     
-    public NewJFrame() {
+    public NewJFrame_Example() {
         // Αρχικοποίηση στοιχείων και ρυθμίσεις του παραθύρου
         initComponents();
     }
